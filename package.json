@@ -1,0 +1,32 @@
+{
+  "name": "feedback-intelligence-dashboard",
+  "version": "1.0.0",
+  "description": "AI-Powered Feedback Intelligence Dashboard",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "feedback",
+    "ai",
+    "dashboard",
+    "analytics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.3",
+    "firebase-admin": "^13.6.0"
+  }
+}
+
+
+
+

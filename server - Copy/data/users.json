@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1767351169017",
+    "email": "shadgunatejaswi@gmail.com",
+    "password": "$2a$10$Cagbh8jUCwLJxaEP477fa.9hBtY.ECF8YgARLc/FMTvG2MPV3cPVS",
+    "name": "pulimaddi venkata shadguna tejaswi",
+    "createdAt": "2026-01-02T10:52:49.017Z"
+  },
+  {
+    "id": "1767382380839",
+    "email": "23pa1a4596@vishnu.edu.in",
+    "password": "$2a$10$j.P2vfYbIQ7tFerYwGIf5.pdcNv/AmQJzxh1fL3CO/pqTssHqQK46",
+    "name": "navya",
+    "createdAt": "2026-01-02T19:33:00.839Z"
+  }
+]

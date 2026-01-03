@@ -1,0 +1,20 @@
+# Netlify Configuration for Frontend Deployment
+# Place this file in the root directory
+
+[build]
+  # Base directory for the build
+  base = "client"
+  # Build command
+  command = "npm run build"
+  # Directory to publish (output directory)
+  publish = "build"
+
+# Redirect all routes to index.html for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables should be set in Netlify dashboard:
+# - REACT_APP_API_URL (your backend API URL)
+

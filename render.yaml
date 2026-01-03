@@ -1,0 +1,29 @@
+# Render Blueprint for Backend Deployment
+# This file allows you to deploy the backend service to Render with one click
+# 
+# Usage:
+# 1. Push this file to your repository
+# 2. Go to https://dashboard.render.com/blueprints
+# 3. Click "New Blueprint" and connect your repository
+# 4. Render will detect this file and create the service
+
+services:
+  - type: web
+    name: feedback-intelligence-api
+    env: node
+    region: oregon  # Change to your preferred region
+    plan: free  # Change to 'starter' or 'standard' for production
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: server
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000  # Render sets PORT automatically, but good to have
+      # Add these via Render dashboard after creation:
+      # - GEMINI_API_KEY (required)
+      # - FRONTEND_URL (required - your frontend deployment URL)
+      # - FIREBASE_PROJECT_ID (optional)
+      # - FIREBASE_SERVICE_ACCOUNT (optional)
+
